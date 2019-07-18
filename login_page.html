@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		::placeholder
+		 { 
+		 	color: white;
+		 	opacity: 1; 
+		}
+		body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url(loginbg.png);
+	font-color: white;
+	background-repeat: no-repeat;
+}
+.login{
+	height: 280px;
+	width: 250px;
+	padding: 40px;
+	position: absolute;
+	top: 80%;
+	left: 85%;
+	transform: translate(-50%,-50%);
+	background: #11ffff;
+	text-align: center;
+	border-radius: 10px;	
+}
+.login h1{
+	color: #FAD7A0 ;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+}
+.login input[type = "text"],
+.login input[type = "password"]
+{
+	background: none;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 5px;
+	width: 185px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+	color: grey;
+}
+
+.login input[type = "text"]:focus,
+.login input[type = "password"]:focus,
+{
+	width: 225px;
+	border-color: #2ecc71;
+	font-color: white;
+}
+
+.lgn a{
+	border:0;
+	background: #2ecc71;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 20px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+	font-size: 16px;
+	width: 60px;
+}
+.login a{
+  color: red;
+}
+
+.lgn a:hover{
+	background: #2ecc71;
+}
+.message{
+	text-align: center;
+	color: white;
+}
+.header{
+	text-align: center;
+	padding: 5px;
+	background: #FD955D;
+	color: white;
+	font-size: 20px;
+	position: sticky;
+}
+.content{
+	width: 700px;
+	color: grey;
+	position: absolute;
+	top: 90%;
+	left: 32%;
+	transform: translate(-50%,-50%);
+	background: #F2FAFD;
+	text-align: center;
+	border-radius: 10px;
+}
+.footer{
+	position: relative;
+	top: 600px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 5rem;
+	background-color: black;
+	text-align: center;
+	color: white;
+	
+}
+	</style>
+</head>
+<body>
+	<div class="header" >
+		<h1>OUR WEBSITE</h1>
+		<P>Platform for all type of "Exam Registration"</P>
+	</div>
+	<form class="login" method="post">
+		<h1><b>Login Form</b></h1>
+		<input type="text" name="usname" placeholder="Username">
+		<input type="password" name="pwd" placeholder="Password">
+		<div class="lgn">
+
+		<a href="sample.html" style="color: white;">Login</a>
+		</div>
+		<!-- <input type="submit" name="sbmt" value="login" > -->
+		<p class="message">Not Registered? <a href="sign_up.html">Sign-up</a></p>
+	</form>
+	<div class="content">
+		<p><b>" Our website name"</b> is a platform where u can register & apply all types of exams easily.</p><p>Just a few simple steps for registration </p><p>and there you go......</p>
+	</div>
+	<div class="footer">
+		<p>&copy 2019 from our team</p>
+	</div>
+</body>
+</html>>

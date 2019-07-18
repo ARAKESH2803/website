@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.header {
+  text-align: center;
+  background-color: #1E90FF;
+  width: 100%;
+  height: 230px;
+}
+.header h1 {
+  font-size: 70px;
+  color:  #CD5C5C;
+  font-family: "Courier New";
+  font-weight: bold;
+  padding-top: 40px;
+
+}
+.header p {
+  font-size: 20px;
+  color:  black;
+  font-family: "Courier New";
+  font-weight: bolder;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+.grpimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.content {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.personal {
+  background-color: white;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.active{
+  background-color: #4CAF50;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Our Website</h1>
+  <p>All type of Exam Registrations at one platform </p>
+</div>
+
+<div class="topnav">
+  <a href="sample.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="results.html">Results</a>
+  <a href="notifications.html">Notifications</a>
+  <a href="exams.html">Examinations</a>
+  <a href="#" style="float:right">Sign out</a>
+  <a class="active" href="#" style="float:right">Profile</a>
+</div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="content">
+    	<a href="#" style="float:right">Edit</a>
+     	<h1 style="padding: 20px"> PERSONAL</h1>
+     	<form class="personal">
+      		<label for="fname">First Name</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      		<label for="lname">Last Name</label>&emsp;&emsp;<br><br>
+      		<label for="contact">Contact</label>&emsp;&emsp;&emsp;&ensp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      		<label for="email">E-mail</label>&emsp;&emsp;&emsp;&emsp;<br><br>
+      		<label for="date">Date of Birth</label>&emsp;&emsp;&emsp;&emsp;
+      		<output type="date" name="dob"></output><br><br> 	
+     	</form>
+    </div>
+    <div class="content">
+    	<a href="#" style="float:right">Edit</a>
+     	<h1 style="padding: 20px">ACADEMICS</h1>
+      	<form class="personal">
+      		<label for="fname">SSC Hallticket No</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      		<label for="lname">Inter Hallticket No</label><br><br>
+      		<label for="contact">UG Hallticket No</label>&emsp;&emsp;&emsp;&ensp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      		<label for="email">PG Hallticket No</label><br><br>
+      		<label for="fname">SSC Marks</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+      		<label for="lname">Inter Marks</label><br><br>
+      		<label for="contact">UG Marks</label>&emsp;&emsp;&emsp;&ensp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      		<label for="email">PG Marks</label><br><br>
+     	</form>
+       
+    </div>
+    <div class="content">
+    	<a href="#" style="float:right">Edit</a>
+     	<h1 style="padding: 20px">DOCUMENTS</h1>
+      	<form class="personal">
+      		<label for="fname">SSC Memo</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      		<label for="lname">SSC Bonofied</label><br><br>
+      		<label for="fname">SSC Tc</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+      		<label for="lname">Inter Memo</label><br><br>
+      		<label for="fname">Inter Bonofied</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      		<label for="lname">Inter Tc</label><br><br>
+      		<label for="fname">UG Memo</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+      		<label for="lname">UG Bonofied</label><br><br>
+      		<label for="contact">UG Tc</label>&emsp;&emsp;&emsp;&ensp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+      		<label for="email">PG Memo</label><br><br>
+      		<label for="fname">PG Bonofied</label>&emsp;&emsp;
+      		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+      		<label for="lname">PG Tc</label><br><br>
+      		
+       
+    </div>
+    <div class="content">
+      <h3>Follow Us</h3>
+      <a href="#" class="fa fa-facebook"></a>&emsp;&emsp;&emsp;
+      <a href="#" class="fa fa-twitter"></a>&emsp;&emsp;&emsp;
+      <a href="#" class="fa fa-google"></a>&emsp;&emsp;&emsp;
+      <a href="#" class="fa fa-instagram"></a>&emsp;&emsp;&emsp;
+      <a href="#" class="fa fa-linkedin"></a>&emsp;&emsp;&emsp;<br><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

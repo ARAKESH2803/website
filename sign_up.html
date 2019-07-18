@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<style>
+		::placeholder { 
+		 color: white;
+		 opacity: 1; 
+		}
+		header{
+			height: 80px;
+			background: red;
+			color: white;
+			text-align: center;
+			font-size: 26pt;
+		}
+		body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url(loginbg.png);
+	font-color: white;
+}
+.register{
+	height: 600px;
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 115%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	background: #5D6D7E;
+	text-align: center;
+	border-radius: 10px;	
+}
+.register h1{
+	color: #FAD7A0 ;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+}
+.register input[type = "text"],
+.register input[type = "password"],
+.register input[type = "date"],
+.register input[type = "email"]
+{
+	background: none;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 5px;
+	width: 185px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+	color: white;
+}
+
+.register input[type = "text"]:focus,
+.register input[type = "password"]:focus,
+.register input[type = "date"]:focus,
+.register input[type = "email"]:focus
+{
+	width: 225px;
+	border-color: #2ecc71;
+	font-color: white;
+}
+
+.register input[type = "submit"]{
+	border:0;
+	background: #2ecc71;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+	font-size: 16px;
+}
+.register a{
+  color: red;
+}
+
+.register input[type = "submit"]:hover{
+	background: #2ecc71;
+}
+.message{
+	text-align: center;
+	color: white;
+}
+.header{
+	text-align: center;
+	padding: 20px;
+	background: #FD955D;
+	color: white;
+	font-size: 20px;
+}
+
+.footer{
+	position: relative;
+	top: 850px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 6rem;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>OUR WEBSITE</h1>
+		<P>Platform for all type of "Exam Registration"</P>
+	</div>
+	<form class="register" method="post" name="reg_form">
+		<h1><B>Sign-up</B></h1>
+		<input type="text" name="fname" placeholder="Full Name">
+		<script type="text/javascript">
+			var fn = document.reg_form.fname.value;
+			var a = fname.length;
+			if(a<6)
+			{
+				alert("Enter min 6 char");
+				document.reg_form.fname.value="";
+			}
+			</script>
+
+		<input type="text" name="fathername" placeholder="Father Name">
+		<input type="text" name="mothername" placeholder="Mother Name">
+		<input type="date" name="dob" placeholder="dd-mm-yyyy">
+		<input type="radio" name="male">Male 
+		<input type="radio" name="female">Female
+		<input type="radio" name="other">Other
+		<input type="email" name="email" placeholder="Email Address">
+		<input type="password" name="pwrd" placeholder="Password">
+		<input type="password" name="pwrd" placeholder="Confirm Password">
+		<input type="submit" name="sbmt" value="Create">
+		<p class="message">Already Registered? <a href="login_page.html">Login</a></p>	
+	</form>
+	<div class="footer">
+		<p>&copy 2019 from our team</p>
+	</div>
+</body>
+</html>>
